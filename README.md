@@ -8,10 +8,10 @@ A lightweight, privacy-focused desktop application built purely in Python for pe
 ![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
 ![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)
 
-## 🚀 Why MDES Exists
+## Why MDES Exists
 Working with PDFs shouldn't require uploading sensitive documents to the cloud, installing bloated software, or being limited by your internet bandwidth. MDES provides **(only)** four core PDF operations through a simple, local interface that respects your privacy and guarantees instant efficiency.
 
-## ✨ Features
+## Features
 *  🔒 100% Offline & Private: No internet connection needed. Your files never leave your computer.
 
 *  🪶 Ultra Lightweight: Minimal footprint—the application is under 15 MB. Fast performance with no bloat.
@@ -29,7 +29,7 @@ Working with PDFs shouldn't require uploading sensitive documents to the cloud, 
 
 *  **Delete**: Remove unwanted pages from a PDF.
 
-## 📦 Installation
+## Installation
 **Option 1: Download Executable**
 1. Go to the [Releases](../../releases) page.
 2. Download the latest MDES PDF Editor.exe file.
@@ -39,7 +39,7 @@ Working with PDFs shouldn't require uploading sensitive documents to the cloud, 
 Clone or Package using PyInstaller:
 pyinstaller --onefile --windowed --name "MDES_PDF_Editor" gui.py
 
-## 🎮 How to Use
+## How to Use
 The workflow is designed to be simple and linear:
 
 1. Select PDF: Choose your input file(s).
@@ -57,19 +57,15 @@ Process: Execute the operation.
 **Usage Notes**
 *  MERGE: Simply select multiple PDFs. They will be combined in the order you select them.
 
-*  EXTRACT / DELETE: Use comma-separated page numbers and ranges.
+*  EXTRACT / DELETE: Use comma-separated page numbers and ranges. Example: 1, 3-5, 8 will include pages 1, 3, 4, 5, and 8.
 
-*  Example: 1, 3-5, 8 will include pages 1, 3, 4, 5, and 8.
-
-*  SPLIT: Define the page numbers where you want to split the document. Each split point creates a new file.
-
-*  Example: Splitting at pages 5, 9 of a 12-page document will create three files: pages 1-4, 5-8, and 9-12.
+*  SPLIT: Define the page numbers where you want to split the document. Each split point creates a new file. Example: Splitting at pages 5, 9 of a 12-page document will create three files: pages 1-4, 5-8, and 9-12.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Acknowledgments
+## Acknowledgments
 *  Application Icon: Generated using Google Gemini.
 
 *  Development: Built with AI assistance for personal use.
@@ -78,9 +74,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *  README: Drafted with the assistance of Deepseek.
 
-## ⚠️ Disclaimer
-This software is provided "as is" for personal and educational purposes. Always verify the results of PDF operations, especially when working with important or sensitive documents.
+## Disclaimer
+This software is provided "as is" for personal purposes. Always verify the results of PDF operations, especially when working with important or sensitive documents.
 
 **Your data stays with you—always offline, always private.**
+
 
 
