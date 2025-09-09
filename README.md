@@ -1,113 +1,86 @@
-﻿# MDES PDFEditor Project(English, 中文， Deutsch)
-
-https://img.shields.io/badge/Python-3.8%252B-3776AB?logo=python&logoColor=white https://img.shields.io/badge/License-MIT-yellow.svg 
+﻿# MDES PDF Editor Project
 
 A lightweight, privacy-focused desktop application built purely in Python for performing essential PDF operations: Merging, Deleting, Extracting, and Splitting.
 
-🖥️ Supported Platforms
-Windows 10 / 11
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.8%2B-green.svg)
+![Linux](https://img.shields.io/badge/Linux-informational?style=flat&logo=linux&logoColor=black)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=flat&logo=windows&logoColor=white)
+![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)
 
-Linux (Tested on Ubuntu, Fedora, and Debian)
+## 🚀 Why MDES Exists
+Working with PDFs shouldn't require uploading sensitive documents to the cloud, installing bloated software, or being limited by your internet bandwidth. MDES provides **(only)** four core PDF operations through a simple, local interface that respects your privacy and guarantees instant efficiency.
 
-macOS 10.15 (Catalina) and newer
+## ✨ Features
+*  🔒 100% Offline & Private: No internet connection needed. Your files never leave your computer.
 
-🚀 Why MDES Exists
-Working with PDFs shouldn't require uploading sensitive documents to the cloud, installing bloated software, or being limited by your internet bandwidth. MDES provides four core PDF operations through a simple, local interface that respects your privacy and guarantees instant efficiency.
+*  🪶 Ultra Lightweight: Minimal footprint—the application is under 15 MB. Fast performance with no bloat.
 
-✨ Features
-🔒 100% Offline & Private: No internet connection needed. Your files never leave your computer.
+*  🛡️ Zero Telemetry: No tracking, analytics, or data collection of any kind.
 
-🪶 Ultra Lightweight: Minimal footprint—the application is under 15 MB. Fast performance with no bloat.
+*  🎯 Simple & Guided UI: A clean, intuitive, and straightforward workflow. No confusing options.
 
-🛡️ Zero Telemetry: No tracking, analytics, or data collection of any kind.
+## Core Operations
+*  **Merge**: Combine multiple PDF files into a single document.
 
-🎯 Simple & Guided UI: A clean, intuitive, and straightforward workflow. No confusing options.
+*  **Split**: Divide a PDF into multiple files by page ranges or at specific page numbers.
 
-Core Operations
-Merge: Combine multiple PDF files into a single document.
+*  **Extract**: Pull specific pages or ranges into a new PDF file.
 
-Split: Divide a PDF into multiple files by page ranges or at specific page numbers.
+*  **Delete**: Remove unwanted pages from a PDF.
 
-Extract: Pull specific pages or ranges into a new PDF file.
+## 📦 Installation
+**Option 1: Download Executable**
+1. Go to the [Releases](../../releases) page.
+2. Download the latest MDES PDF Editor.exe file.
+3. Run the executable. No installation required.
 
-Delete: Remove unwanted pages from a PDF.
+**Option 2: Run from Source"**
+Clone or Package using PyInstaller:
+pyinstaller --onefile --windowed --name "MDES_PDF_Editor" gui.py
 
-📦 Installation
-Option 1: Download Executable
-Go to the [Releases](../../releases) page.
-Download the latest MDES PDF Editor.exe file.
-Run the executable. No installation required.
-
-Option 2:
-Run from Source 
-Clone the repository
-
-bash
-git clone https://github.com/yourusername/mdes-pdf-editor.git
-cd mdes-pdf-editor
-Install dependencies
-
-bash
-pip install -r requirements.txt
-Run the application
-
-bash
-python pdf_editor.py
-
-
-🎮 How to Use
+## 🎮 How to Use
 The workflow is designed to be simple and linear:
 
-Select PDF: Choose your input file(s).
+1. Select PDF: Choose your input file(s).
 
-Choose Folder: Select the destination for the output file.
+2. Choose Folder: Select the destination for the output file.
 
-Pick Function: Select your desired operation (Merge, Delete, Extract, or Split).
+3. Pick Function: Select your desired operation (Merge, Delete, Extract, or Split).
 
 Configure: Enter the required page numbers or ranges.
 
 Process: Execute the operation.
 
-That's it! The status area will display the result of your operation.
+**That's it!** The status area will display the result of your operation.
 
-📝 Usage Notes
-MERGE: Simply select multiple PDFs. They will be combined in the order you select them.
+**Usage Notes**
+*  MERGE: Simply select multiple PDFs. They will be combined in the order you select them.
 
-EXTRACT / DELETE: Use comma-separated page numbers and ranges.
+*  EXTRACT / DELETE: Use comma-separated page numbers and ranges.
 
-Example: 1, 3-5, 8 will include pages 1, 3, 4, 5, and 8.
+*  Example: 1, 3-5, 8 will include pages 1, 3, 4, 5, and 8.
 
-SPLIT: Define the page numbers where you want to split the document. Each split point creates a new file.
+*  SPLIT: Define the page numbers where you want to split the document. Each split point creates a new file.
 
-Example: Splitting at pages 5, 9 of a 12-page document will create three files: pages 1-4, 5-8, and 9-12.
+*  Example: Splitting at pages 5, 9 of a 12-page document will create three files: pages 1-4, 5-8, and 9-12.
 
-🛠️ For Developers
-This project uses:
+## License
 
-Python with Tkinter for the GUI.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-PyPDF2 for PDF processing.
+## 🤝 Acknowledgments
+*  Application Icon: Generated using Google Gemini.
 
-To build a standalone executable yourself using PyInstaller:
+*  Development: Built with AI assistance for personal use.
 
-bash
-# Install pyinstaller
-pip install pyinstaller
+*  Libraries: Powered by the simplicity of Tkinter and the reliability of PyPDF2.
 
-# Build the executable (outputs to /dist/)
-pyinstaller --onefile --windowed --name "MDES_PDF_Editor" pdf_editor.py
+*  README: Drafted with the assistance of Deepseek.
 
-🤝 Acknowledgments
-Application Icon: Generated using Google Gemini.
-
-Development: Built with AI assistance for personal use.
-
-Libraries: Powered by the simplicity of Tkinter and the reliability of PyPDF2.
-
-README: Drafted with the assistance of Deepseek.
-
-⚠️ Disclaimer
+## ⚠️ Disclaimer
 This software is provided "as is" for personal and educational purposes. Always verify the results of PDF operations, especially when working with important or sensitive documents.
 
-Your data stays with you—always offline, always private.
+**Your data stays with you—always offline, always private.**
+
 
