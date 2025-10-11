@@ -50,9 +50,9 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            app-dist-ubuntu-latest/"MEDS pdf Editor"*
-            app-dist-windows-latest/"MEDS pdf Editor"*
-            app-dist-macos-latest/"MEDS pdf Editor"*
+            app-dist-ubuntu-latest/'MEDS pdf Editor'
+            app-dist-windows-latest/'MEDS pdf Editor.exe'
+            app-dist-macos-latest/'MEDS pdf Editor'
           body: |
             A new release of the application.
             - This release includes executables for Windows, macOS, and Linux.
