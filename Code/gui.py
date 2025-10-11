@@ -18,7 +18,7 @@ class PDFeditor_GUI:
         self.stop_event = threading.Event() 
         self.pb = PDFEditorBackend()
         self.lm = LanguageManager() 
-        self.lm.set_lang('中文')
+        self.lm.set_lang('English')
         self.processing = False
 
         self.setup_layout()
